@@ -1,7 +1,105 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+// ============================== 1 =============
+const addAll = function(arr){
+  let sum = 0
+  for(let num of arr){
+    sum += num
+  }
+  return sum
+}
 
+// ============================== 2 =============
+
+const countSpaces = function(str){
+  let spaces = 0
+  for(let char of str){
+   if(char === " "){
+    spaces++
+   }
+  }
+  return spaces
+}
+
+// ============================== 3 ==============
+
+const countTrues = function(arr){
+  let trues = 0
+  for(const val of arr){
+    if(val === true){
+      trues++
+    }
+  }
+  return trues
+}
+
+// =============================== 4 ==============
+
+const makeFriendly = function(para){
+  let result = ""
+  for(const char of para){
+    if(char === "."){
+      result += "!"
+    }else {
+      result += char
+    }
+}
+return result  
+}
+
+// =============================== 5 =============
+const cubeAll = function(num){
+  const result = []
+  for(const i in num){
+    result.push(Math.pow(num[i], 3))
+  }
+  return result
+}
+
+// =============================== 6 =============
+
+const addNoises = function(animals) {
+  const result = []
+  for (const i in animals) {
+    const animal = animals[i]
+    if (animal === 'Fido' || animal === 'Rolph' || animal === 'Maisie') {
+      result.push(animal + ' says "Woof!"')
+    } else if (animal === 'Garfield' || animal === 'Heathcliff') {
+      result.push(animal + ' says "Meow!"')
+    } else if (animal === 'Sharp Tooth' || animal === 'Barnie') {
+      result.push(animal + ' says "ROWR."')
+    } else {
+      result.push(animal)
+    }
+  }
+  return result
+}
+
+
+// =============================== 7 =============
+
+ const womenOnly = function(names) {
+  const result = [];
+  for (const i in names) {
+    if (names[i].endsWith("F")) {
+      result.push(names[i])
+    }
+  }
+  return result
+}
+
+// =============================== 8 =============
+
+const integersOnly = function(numbers) {
+  const result = [];
+  for (const i in numbers) {
+    if (Number.isInteger(numbers[i])) {
+      result.push(numbers[i])
+    }
+  }
+  return result
+}
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
