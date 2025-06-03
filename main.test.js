@@ -49,57 +49,56 @@ return result
 }
 
 // =============================== 5 =============
-const cubeAll = function(num){
-  const result = []
-  for(const i in num){
-    result.push(Math.pow(num[i], 3))
+const cubeAll = function(num) {
+  const result = [];
+  for (const n of num) {
+    result.push(Math.pow(n, 3));
   }
-  return result
-}
+  return result;
+};
 
 // =============================== 6 =============
 
 const addNoises = function(animals) {
-  const result = []
-  for (const i in animals) {
-    const animal = animals[i]
+  const result = [];
+  for (const animal of animals) {
     if (animal === 'Fido' || animal === 'Rolph' || animal === 'Maisie') {
-      result.push(animal + ' says "Woof!"')
+      result.push(animal + ' says "Woof!"');
     } else if (animal === 'Garfield' || animal === 'Heathcliff') {
-      result.push(animal + ' says "Meow!"')
+      result.push(animal + ' says "Meow!"');
     } else if (animal === 'Sharp Tooth' || animal === 'Barnie') {
-      result.push(animal + ' says "ROWR."')
+      result.push(animal + ' says "ROWR."');
     } else {
-      result.push(animal)
+      result.push(animal);
     }
   }
-  return result
-}
+  return result;
+};
 
 
 // =============================== 7 =============
 
  const womenOnly = function(names) {
   const result = [];
-  for (const i in names) {
-    if (names[i].endsWith("F")) {
-      result.push(names[i])
+  for (const name of names) {
+    if (name.endsWith("F")) {
+      result.push(name);
     }
   }
-  return result
-}
+  return result;
+};
 
 // =============================== 8 =============
 
 const integersOnly = function(numbers) {
   const result = [];
-  for (const i in numbers) {
-    if (Number.isInteger(numbers[i])) {
-      result.push(numbers[i])
+  for (const number of numbers) {
+    if (Number.isInteger(number)) {
+      result.push(number);
     }
   }
-  return result
-}
+  return result;
+};
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
